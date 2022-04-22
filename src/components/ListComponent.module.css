@@ -1,0 +1,45 @@
+.listComp{
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+   */
+   display: flex;
+   gap: 2.5rem;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 70%;
+  padding-bottom: 2em;
+}
+
+.wrapper > button{
+  box-shadow: none;
+  font-size: 10px;
+  position: relative;
+  left: 44.5%;
+  appearance: none;
+  padding: 0.8em 1.1em;
+  background-color: #045b42;
+  color: #e1f0e4;
+  /* border: 1.5px solid #e1f0e4; */
+  /* border-radius: 10px; */
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+    appearance: none;
+  border: none;
+}
+
+.wrapper > button:hover{
+  background-color: #657899;
+  color: #e1f0e4;
+}

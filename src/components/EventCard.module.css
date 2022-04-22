@@ -1,0 +1,188 @@
+.eventCard{
+  color: #fbeee0;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  display: block;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #17202b;
+  /* height: 30rem; */
+  width: 40rem;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 16px 0 rgba(0,2,2,2);
+  overflow: hidden;
+}
+:hover.eventCard{
+  /* transform: scale(1.05); */
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.eventCard:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  /* border-radius: 10px; */
+}
+
+.eventCard h1{
+  font-family: 'Apocalypse';
+}
+
+.eventAttend{
+  background-color: #7f9b93;
+}
+
+.imageWrapper{
+  height: 10rem;
+  width: 10rem;
+  background-color: black;
+}
+
+.cardImage{
+  /* border-radius: 10px 0 10px 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #657899;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+ 
+}
+
+.overlaycontent{
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.infowrapper{
+  padding-left: 3em;
+  width: 100%;
+}
+.interaction{
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  padding-right: 0.5em;
+  overflow-y: auto;
+}
+
+.comment{
+  display: block;
+}
+
+.overlayInput{
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0.5em;
+}
+
+.overlayDesc{
+  font-size: 13px;
+}
+.overlayAttend{
+  font-size: 13px;
+}
+
+.overlayComments{
+  padding: 1em 0;
+  font-size: 13px;
+}
+
+.overlayButton{
+  background-color: #17202b;
+  color: white;
+  width: 5em;
+  padding: 0.3em 1em;
+  /* border-radius: 10px; */
+}
+
+.cardButton {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  /* font-family: Apocalypse; */
+  background-color: #fbeee0;
+  /* border-radius: 10px; */
+  color: #422800;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 10px;
+  text-align: center;
+}
+
+.cardButton:hover {
+  background-color: #7f9b93;
+  color: #fbeee0;
+  /* transform: scale(1.1); */
+  transition: 0.1s ease-in-out;
+}
+
+.bookedBanner{
+  height: 30px;
+  width: 170px;
+  background-color: #fff;
+  z-index: 10;
+  transform: rotate(-35deg);
+  position: absolute;
+  right: -40px;
+  top: 120px;
+  color: #17202b;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  place-items: center;
+}
+
+.bookedBanner>span{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-left: 0.6em;
+}
+
+.cardTime, .cardDate{
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* .cardDesc{
+  font-family: 'Apocalypse';
+} */
+
+
+/***SCROLLBAR***/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
